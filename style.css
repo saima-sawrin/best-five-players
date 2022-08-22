@@ -3,5 +3,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100%;
  
 }
+
+
+#ol-container li:nth-of-type(1n+6) {
+    display: none;
+  }
