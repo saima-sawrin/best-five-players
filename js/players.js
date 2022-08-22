@@ -7,7 +7,7 @@ document.getElementById('btn-select1').addEventListener('click', function(){
     const previousPlayer = getTextElementById('counter');
     const totalPlayers = previousPlayer + 1;
 
-    if(totalPlayers == 6){
+    if(totalPlayers >5){
         alert('Can not added more than Five player');
         return;
     }
@@ -24,7 +24,7 @@ document.getElementById('btn-select2').addEventListener('click', function(){
     playerList.appendChild(li);
     const previousPlayer = getTextElementById('counter');
     const totalPlayers = previousPlayer + 1;
-    if(totalPlayers == 6){
+    if(totalPlayers > 5){
         alert('Can not added more than Five player');
         return;
     }
@@ -39,7 +39,7 @@ document.getElementById('btn-select3').addEventListener('click', function(){
     playerList.appendChild(li);
     const previousPlayer = getTextElementById('counter');
     const totalPlayers = previousPlayer + 1;
-    if(totalPlayers == 6){
+    if(totalPlayers > 5){
         alert('Can not added more than Five player');
         return;
     }
