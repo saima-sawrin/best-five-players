@@ -97,7 +97,7 @@ document.getElementById('btn-select6').addEventListener('click', function(){
 document.getElementById('btn-select7').addEventListener('click', function(){
     const playerList = document.getElementById('ol-container');
     const li = document.createElement('li');
-    li.innerText = 'Lionel Messi';
+    li.innerText = 'Kieren Trippier';
     playerList.appendChild(li);
     
     const previousPlayer = getTextElementById('counter');
@@ -116,7 +116,7 @@ document.getElementById('btn-select7').addEventListener('click', function(){
 document.getElementById('btn-select8').addEventListener('click', function(){
     const playerList = document.getElementById('ol-container');
     const li = document.createElement('li');
-    li.innerText = 'Neymar Jr';
+    li.innerText = 'Thomas Partey';
     playerList.appendChild(li);
     const previousPlayer = getTextElementById('counter');
     const totalPlayers = previousPlayer + 1;
@@ -131,7 +131,7 @@ document.getElementById('btn-select8').addEventListener('click', function(){
 document.getElementById('btn-select9').addEventListener('click', function(){
     const playerList = document.getElementById('ol-container');
     const li = document.createElement('li');
-    li.innerText = 'Kylian Mbappé';
+    li.innerText = 'Julian Brandt';
     playerList.appendChild(li);
     const previousPlayer = getTextElementById('counter');
     const totalPlayers = previousPlayer + 1;
@@ -139,8 +139,14 @@ document.getElementById('btn-select9').addEventListener('click', function(){
         alert('Can not select more than Five players');
         return;
     }
+    
     setTextElementById('counter', totalPlayers);
 
+})
+document.getElementById('ol-container').addEventListener('click',function(event){
+
+    event.target.parentNode.removeChild(event.target);
+   
 })
 
 
